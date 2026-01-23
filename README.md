@@ -23,6 +23,7 @@ Lula aggregates job listings in real-time using the **Adzuna API**, providing us
 - **Styling**: Tailwind CSS (via CDN) for a glassmorphism-inspired UI
 - **Data Source**: Adzuna API (South Africa endpoint)
 - **State Management**: Browser `localStorage` for user sessions and data persistence
+- Lula_Final_Project: https://nomajolarorwana.github.io/Lula_Final_Project/home.htm
 
 ## 📦 Getting Started
 
@@ -43,6 +44,7 @@ Lula aggregates job listings in real-time using the **Adzuna API**, providing us
 - `main.css` & `styles/`: Custom styles complementing the Tailwind framework.
 
 - Lula_Final_Project: https://nomajolarorwana.github.io/Lula_Final_Project/home.htm
+
 
 
 
