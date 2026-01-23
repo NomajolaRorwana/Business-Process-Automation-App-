@@ -42,8 +42,7 @@ Lula aggregates job listings in real-time using the **Adzuna API**, providing us
 - `app.js`: Contains all application logic, including API integration, authentication handling, and UI rendering.
 - `main.css` & `styles/`: Custom styles complementing the Tailwind framework.
 
-https://nomajolarorwana.github.io/Lula_Final_Project/home.htm
-### 🌍 Connect with me
 - Lula_Final_Project: https://nomajolarorwana.github.io/Lula_Final_Project/home.htm
+
 
 
