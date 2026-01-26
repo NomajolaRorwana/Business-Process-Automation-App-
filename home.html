@@ -3,214 +3,215 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <title>Lula | Explore New Job Vacancies</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="home_styles.css">
-
-    </style>
 </head>
 
 <body>
 
-
     <nav id="site-nav">
-        <div class="nav-inner flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <div class="nav-inner flex items-center justify-between px-4 sm:px-6 md:px-8 py-4 md:py-6 max-w-7xl mx-auto">
             <div class="flex items-center gap-2">
-                <img src="Images/Lula_logo.png" alt="Lula Logo" class="h-8">
-                <span class="font-bold text-xl">lula</span>
+                <img src="Images/Lula_logo.png" alt="Lula Logo" class="h-6 sm:h-7 md:h-8">
+                <span class="font-bold text-lg sm:text-xl">lula</span>
             </div>
-            <div class="hidden md:flex gap-8 text-gray-300">
-                <a href="#">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact Us</a>
-                <a href="login.html">Login</a>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Desktop menu -->
+            <div id="desktop-menu" class="hidden md:flex gap-6 lg:gap-8 text-gray-300 text-sm lg:text-base">
+                <a href="#" class="hover:text-mint transition">Home</a>
+                <a href="#about" class="hover:text-mint transition">About Us</a>
+                <a href="#contact" class="hover:text-mint transition">Contact Us</a>
+                <a href="login.html" class="hover:text-mint transition">Login</a>
             </div>
-            <button onclick="window.location.href='registration.html'" class="signup-btn border px-6 py-2 rounded-full transition">Sign up</button>
+            
+            <button onclick="window.location.href='registration.html'" class="hidden md:block signup-btn border px-4 lg:px-6 py-2 rounded-full transition text-sm lg:text-base">Sign up</button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-gray-700">
+            <div class="flex flex-col gap-4 px-6 py-6">
+                <a href="#" class="text-gray-300 hover:text-mint transition">Home</a>
+                <a href="#about" class="text-gray-300 hover:text-mint transition">About Us</a>
+                <a href="#contact" class="text-gray-300 hover:text-mint transition">Contact Us</a>
+                <a href="login.html" class="text-gray-300 hover:text-mint transition">Login</a>
+                <button onclick="window.location.href='registration.html'" class="signup-btn border px-6 py-2 rounded-full transition w-full">Sign up</button>
+            </div>
         </div>
     </nav>
 
-    <section class="relative pt-10 pb-20 px-4 text-center">
+    <section class="relative pt-8 sm:pt-10 md:pt-12 pb-12 sm:pb-16 md:pb-20 px-4 text-center">
         <img src="Images/section_image.png" alt="Lula Team"
             class="absolute inset-0 w-full h-full object-cover filter blur-sm opacity-40 pointer-events-none">
         <div class="absolute inset-0 bg-slate-900/50 backdrop-blur-sm pointer-events-none"></div>
-        <div class="max-w-4xl mx-auto relative z-20">
-
-
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight relative z-30">
+        <div class="max-w-4xl mx-auto relative z-20 px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight relative z-30">
                 Explore new <span class="text-mint">job</span><br>
                 vacancies the <span class="text-mint">Lula</span> way
             </h1>
-            <p class="text-gray-400 max-w-xl mx-auto mb-10" style="margin-top: 5vh;">
+            <p class="text-gray-400 text-sm sm:text-base max-w-xl mx-auto mb-8 sm:mb-10 px-4" style="margin-top: 3vh;">
                 Our platform features job vacancies in <span class="text-mint">South Africa</span>, connecting you with
                 employers who value your skills and experience.
             </p>
-
-
         </div>
     </section>
 
-    <div class="my-8 flex justify-center">
-        <div class="glass-card max-w-2xl mx-auto p-4 rounded-2xl flex flex-wrap justify-center gap-4">
-            <span
-                class="px-6 py-2 rounded-full bg-slate-700 text-white hover:bg-[rgba(52,211,153,0.2)] hover:text-white transition cursor-default">Full
-                Time</span>
-            <span
-                class="px-6 py-2 rounded-full border border-gray-600 text-gray-300 hover:bg-[rgba(52,211,153,0.2)] hover:text-white transition cursor-default">Remote</span>
-            <span
-                class="px-6 py-2 rounded-full border border-gray-600 text-gray-300 hover:bg-[rgba(52,211,153,0.2)] hover:text-white transition cursor-default">Part-Time</span>
-            <span
-                class="px-6 py-2 rounded-full border border-gray-600 text-gray-300 hover:bg-[rgba(52,211,153,0.2)] hover:text-white transition cursor-default">Hybrid</span>
+    <div class="my-6 sm:my-8 flex justify-center px-4">
+        <div class="glass-card max-w-2xl mx-auto p-3 sm:p-4 rounded-2xl flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4">
+            <span class="px-4 sm:px-5 md:px-6 py-2 text-sm sm:text-base rounded-full bg-slate-700 text-white hover:bg-[rgba(52,211,153,0.2)] hover:text-white transition cursor-default">Full Time</span>
+            <span class="px-4 sm:px-5 md:px-6 py-2 text-sm sm:text-base rounded-full border border-gray-600 text-gray-300 hover:bg-[rgba(52,211,153,0.2)] hover:text-white transition cursor-default">Remote</span>
+            <span class="px-4 sm:px-5 md:px-6 py-2 text-sm sm:text-base rounded-full border border-gray-600 text-gray-300 hover:bg-[rgba(52,211,153,0.2)] hover:text-white transition cursor-default">Part-Time</span>
+            <span class="px-4 sm:px-5 md:px-6 py-2 text-sm sm:text-base rounded-full border border-gray-600 text-gray-300 hover:bg-[rgba(52,211,153,0.2)] hover:text-white transition cursor-default">Hybrid</span>
         </div>
     </div>
 
-    <!-- CTA removed here; it will be placed beside candidate cards for better layout -->
-
     <img src="Images/shape_right.png" alt="Decorative right shape"
-        class="hidden lg:block absolute right-2 top-1/2 -translate-y-1/2 w-36 pointer-events-none opacity-80 z-10 decor-fade">
+        class="hidden xl:block absolute right-2 top-1/2 -translate-y-1/2 w-24 xl:w-36 pointer-events-none opacity-80 z-10 decor-fade">
     <img src="Images/shape_left.png" alt="Decorative left shape"
-        class="hidden lg:block absolute left-2 top-1/2 -translate-y-1/2 w-36 pointer-events-none opacity-80 z-10 decor-fade delay">
+        class="hidden xl:block absolute left-2 top-1/2 -translate-y-1/2 w-24 xl:w-36 pointer-events-none opacity-80 z-10 decor-fade delay">
 
-    <section class="max-w-7xl mx-auto px-4 py-20">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
+    <section class="max-w-7xl mx-auto px-4 py-12 sm:py-16 md:py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 sm:gap-8 items-start">
             <!-- CTA column -->
-            <div class="md:col-span-1 flex justify-center">
-                <div class="glass-card max-w-sm w-full p-8 rounded-3xl text-center">
-                    <div class="text-mint text-sm font-bold uppercase tracking-wider">Profile</div>
-                    <h3 class="text-2xl md:text-3xl font-bold mt-2 mb-4">Stand out in the job market</h3>
-                    <p class="text-gray-200 max-w-md mx-auto mb-4">Be the candidate employers are looking for. Create a
+            <div class="lg:col-span-1 flex justify-center order-2 lg:order-1">
+                <div class="glass-card max-w-sm w-full p-6 sm:p-8 rounded-3xl text-center">
+                    <div class="text-mint text-xs sm:text-sm font-bold uppercase tracking-wider">Profile</div>
+                    <h3 class="text-xl sm:text-2xl md:text-3xl font-bold mt-2 mb-3 sm:mb-4">Stand out in the job market</h3>
+                    <p class="text-gray-200 text-sm sm:text-base max-w-md mx-auto mb-3 sm:mb-4">Be the candidate employers are looking for. Create a
                         profile and start receiving interview invites and job offers that align with your unique skills.
                     </p>
-                    <p class="text-gray-400 max-w-md mx-auto mb-6">Don't miss out on your dream job—get started today
+                    <p class="text-gray-400 text-xs sm:text-sm max-w-md mx-auto mb-4 sm:mb-6">Don't miss out on your dream job—get started today
                         and make your profile stand out.</p>
                     <button onclick="window.location.href='registration.html'"
-                        class="px-8 py-3 bg-[#34D399] text-slate-900 rounded-full font-semibold hover:bg-[rgba(52,211,153,0.9)]">Create
-                        now</button>
+                        class="px-6 sm:px-8 py-2 sm:py-3 text-sm sm:text-base bg-[#34D399] text-slate-900 rounded-full font-semibold hover:bg-[rgba(52,211,153,0.9)] w-full sm:w-auto">Create now</button>
                 </div>
             </div>
 
             <!-- Candidate cards column -->
-            <div class="md:col-span-3">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger">
+            <div class="lg:col-span-3 order-1 lg:order-2">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 stagger">
                     <div style="--i:1" class="candidate-card p-0 text-center hover-lift reveal">
-                        <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="bg-mint p-6 flex flex-col items-center justify-center text-white">
-                                <img src="Images/Roy William.png" alt="Roy" class="w-32 h-32 object-cover rounded-full mb-4">
-                                <h3 class="font-bold text-lg">Roy William</h3>
-                                <p class="text-sm opacity-90">Product Designer</p>
+                        <div class="grid grid-cols-1">
+                            <div class="bg-mint p-4 sm:p-6 flex flex-col items-center justify-center text-white">
+                                <img src="Images/Roy William.png" alt="Roy" class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-full mb-3 sm:mb-4">
+                                <h3 class="font-bold text-base sm:text-lg">Roy William</h3>
+                                <p class="text-xs sm:text-sm opacity-90">Product Designer</p>
                             </div>
-                            <div class="glass-card p-6 flex flex-col items-center justify-center text-sm">
-                                <div class="mb-3 text-gray-200">+5 years</div>
-                                <div class="flex flex-wrap gap-2 justify-center">
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Figma</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">UI/UX</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Adobe XD</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Sketch</span>
+                            <div class="glass-card p-4 sm:p-6 flex flex-col items-center justify-center text-xs sm:text-sm">
+                                <div class="mb-2 sm:mb-3 text-gray-200">+5 years</div>
+                                <div class="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Figma</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">UI/UX</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Adobe XD</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Sketch</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div style="--i:2" class="candidate-card p-0 text-center hover-lift reveal">
-                        <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="bg-mint p-6 flex flex-col items-center justify-center text-white">
+                        <div class="grid grid-cols-1">
+                            <div class="bg-mint p-4 sm:p-6 flex flex-col items-center justify-center text-white">
                                 <img src="Images/sophie Aria.png" alt="Sophie"
-                                    class="w-32 h-32 object-cover rounded-full mb-4">
-                                <h3 class="font-bold text-lg">Sophie Aria</h3>
-                                <p class="text-sm opacity-90">HR Coordinator</p>
+                                    class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-full mb-3 sm:mb-4">
+                                <h3 class="font-bold text-base sm:text-lg">Sophie Aria</h3>
+                                <p class="text-xs sm:text-sm opacity-90">HR Coordinator</p>
                             </div>
-                            <div class="glass-card p-6 flex flex-col items-center justify-center text-sm">
-                                <div class="mb-3 text-gray-200">2 years</div>
-                                <div class="flex flex-wrap gap-2 justify-center">
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">ATS</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Payroll</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Jira</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Admin</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Onboarding</span>
+                            <div class="glass-card p-4 sm:p-6 flex flex-col items-center justify-center text-xs sm:text-sm">
+                                <div class="mb-2 sm:mb-3 text-gray-200">2 years</div>
+                                <div class="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">ATS</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Payroll</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Jira</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Admin</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Onboarding</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div style="--i:3" class="candidate-card p-0 text-center hover-lift reveal">
-                        <div class="grid grid-cols-1 md:grid-cols-2">
-                            <div class="bg-mint p-6 flex flex-col items-center justify-center text-white">
+                    <div style="--i:3" class="candidate-card p-0 text-center hover-lift reveal sm:col-span-2 lg:col-span-1">
+                        <div class="grid grid-cols-1">
+                            <div class="bg-mint p-4 sm:p-6 flex flex-col items-center justify-center text-white">
                                 <img src="Images/vivienne.png" alt="Vivienne Mlangeni"
-                                    class="w-32 h-32 object-cover rounded-full mb-4">
-                                <h3 class="font-bold text-lg">Vivienne Mlangeni</h3>
-                                <p class="text-sm opacity-90">Senior Accountant</p>
+                                    class="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 object-cover rounded-full mb-3 sm:mb-4">
+                                <h3 class="font-bold text-base sm:text-lg">Vivienne Mlangeni</h3>
+                                <p class="text-xs sm:text-sm opacity-90">Senior Accountant</p>
                             </div>
-                            <div class="glass-card p-6 flex flex-col items-center justify-center text-sm">
-                                <div class="mb-3 text-gray-200">+5 years</div>
-                                <div class="flex flex-wrap gap-2 justify-center">
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Auditing</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Taxation</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Financial
-                                        Reporting</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">Budgeting</span>
-                                    <span class="text-xs bg-slate-800 px-3 py-1 rounded skill-badge">SAP</span>
+                            <div class="glass-card p-4 sm:p-6 flex flex-col items-center justify-center text-xs sm:text-sm">
+                                <div class="mb-2 sm:mb-3 text-gray-200">+5 years</div>
+                                <div class="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Auditing</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Taxation</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Financial Reporting</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">Budgeting</span>
+                                    <span class="text-xs bg-slate-800 px-2 sm:px-3 py-1 rounded skill-badge">SAP</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                </div>
-    </section>
-
-    <section class="px-4 py-12">
-        <div class="max-w-7xl mx-auto text-center">
-            <h3 class="text-3xl md:text-4xl font-bold mb-8">Popular jobs in SA</h3>
-            <div class="glass-card p-6 rounded-2xl inline-block reveal">
-                <div class="flex flex-wrap justify-center gap-4 max-w-4xl stagger">
-                    <span style="--i:1" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Project Manager</span>
-                    <span style="--i:2" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Data Entry</span>
-                    <span style="--i:3" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Customer Service</span>
-                    <span style="--i:4" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Web Design</span>
-                    <span style="--i:5" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Bookkeeping</span>
-                    <span style="--i:6" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Software
-                        Development</span>
-                    <span style="--i:7" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Communication</span>
-                    <span style="--i:8" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Analyst</span>
-                    <span style="--i:9" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Graphic Design</span>
-                    <span style="--i:10" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Education</span>
-                    <span style="--i:11" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Sales</span>
-                    <span style="--i:12" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Pharmacist</span>
-                    <span style="--i:13" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Developer</span>
-                    <span style="--i:14" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">UI/UX Design</span>
-                    <span style="--i:15" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Marketing</span>
-                    <span style="--i:16" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Call Center</span>
-                    <span style="--i:17" class="px-5 py-2 rounded-md bg-slate-700 text-gray-300">Accounting</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="bg-dark-section py-20">
-        <div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <span class="text-mint text-xl md:text-2xl font-bold uppercase tracking-widest">About Lula</span>
-                <h2 class="text-3xl font-bold mt-4 mb-6">Get jobs from leading companies</h2>
-                <p class="text-gray-400 mb-8">Lula is bridging the gap between talent and South African opportunities.
+    <section class="px-4 py-8 sm:py-12">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8">Popular jobs in SA</h3>
+            <div class="glass-card p-4 sm:p-6 rounded-2xl inline-block reveal w-full max-w-5xl">
+                <div class="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 stagger">
+                    <span style="--i:1" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Project Manager</span>
+                    <span style="--i:2" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Data Entry</span>
+                    <span style="--i:3" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Customer Service</span>
+                    <span style="--i:4" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Web Design</span>
+                    <span style="--i:5" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Bookkeeping</span>
+                    <span style="--i:6" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Software Development</span>
+                    <span style="--i:7" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Communication</span>
+                    <span style="--i:8" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Analyst</span>
+                    <span style="--i:9" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Graphic Design</span>
+                    <span style="--i:10" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Education</span>
+                    <span style="--i:11" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Sales</span>
+                    <span style="--i:12" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Pharmacist</span>
+                    <span style="--i:13" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Developer</span>
+                    <span style="--i:14" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">UI/UX Design</span>
+                    <span style="--i:15" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Marketing</span>
+                    <span style="--i:16" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Call Center</span>
+                    <span style="--i:17" class="px-3 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm rounded-md bg-slate-700 text-gray-300">Accounting</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-dark-section py-12 sm:py-16 md:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
+            <div class="order-2 md:order-1">
+                <span class="text-mint text-lg sm:text-xl md:text-2xl font-bold uppercase tracking-widest">About Lula</span>
+                <h2 class="text-2xl sm:text-3xl font-bold mt-3 sm:mt-4 mb-4 sm:mb-6">Get jobs from leading companies</h2>
+                <p class="text-gray-400 text-sm sm:text-base mb-6 sm:mb-8">Lula is bridging the gap between talent and South African opportunities.
                     It was established in 2026. We use smart data and market insights to simplify your career journey.
                     We collaborate with top organizations to bring you the best job opportunities, connecting you with
                     leading employers who value your skills and expertise.</p>
-                <ul class="space-y-4">
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-mint"></i> Over 100+ emerging
-                        startups and top organizations</li>
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-mint"></i> Job applications
-                        to top-tier companies.</li>
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-mint"></i> Personalized
-                        recommendations based on qualifications</li>
+                <ul class="space-y-3 sm:space-y-4 text-sm sm:text-base">
+                    <li class="flex items-start gap-2 sm:gap-3"><i class="fas fa-check-circle text-mint mt-1"></i> <span>Over 100+ emerging
+                        startups and top organizations</span></li>
+                    <li class="flex items-start gap-2 sm:gap-3"><i class="fas fa-check-circle text-mint mt-1"></i> <span>Job applications
+                        to top-tier companies.</span></li>
+                    <li class="flex items-start gap-2 sm:gap-3"><i class="fas fa-check-circle text-mint mt-1"></i> <span>Personalized
+                        recommendations based on qualifications</span></li>
                 </ul>
             </div>
 
-            <div>
-
-                <div class="glass-card p-8 rounded-3xl text-sm"
-                    style="transform: scale(1.2); transform-origin: center;">
-                    <div class="text-sm text-mint font-bold mb-4">TOP COMPANIES</div>
-                    <div class="logo-marquee mt-4">
+            <div class="order-1 md:order-2">
+                <div class="glass-card p-4 sm:p-6 md:p-8 rounded-3xl text-sm company-logos-container">
+                    <div class="text-xs sm:text-sm text-mint font-bold mb-3 sm:mb-4">TOP COMPANIES</div>
+                    <div class="logo-marquee mt-3 sm:mt-4">
                         <div class="marquee-track">
                             <img src="Images/sage.png" alt="sage">
                             <img src="Images/Allan_gray.png" alt="allan">
@@ -239,28 +240,31 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <footer id="contact" class="bg-slate-950 py-16 text-gray-400">
-        <div class="max-auto max-w-7xl px-8 grid md:grid-cols-3 gap-12">
+    <footer id="contact" class="bg-slate-950 py-10 sm:py-12 md:py-16 text-gray-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
             <div>
-                <div class="flex items-center gap-2 mb-4">
-                    <img src="Images/Lula_logo.png" class="h-6">
-                    <span class="text-white font-bold">lula</span>
+                <div class="flex items-center gap-2 mb-3 sm:mb-4">
+                    <img src="Images/Lula_logo.png" class="h-5 sm:h-6">
+                    <span class="text-white font-bold text-base sm:text-lg">lula</span>
                 </div>
-                <p class="text-xs">Lula is bridging the gap between talent and South African opportunities.</p>
+                <p class="text-xs sm:text-sm">Lula is bridging the gap between talent and South African opportunities.</p>
             </div>
             <div>
-                <h4 class="text-white font-bold mb-4">Help & Support</h4>
-                <ul class="text-sm space-y-2">
-                    <li>About Us</li>
-                    <li>Home</li>
+                <h4 class="text-white font-bold mb-3 sm:mb-4 text-sm sm:text-base">Help & Support</h4>
+                <ul class="text-xs sm:text-sm space-y-2">
+                    <li><a href="#about" class="hover:text-mint transition">About Us</a></li>
+                    <li><a href="#" class="hover:text-mint transition">Home</a></li>
                 </ul>
             </div>
-            <div class="text-xs">
-                <p>© 2026 Lula. All Rights Reserved. 32 Foreshore 8001, Cape Town, South Africa.</p>
+            <div class="text-xs sm:text-sm sm:col-span-2 md:col-span-1">
+                <p>© 2026 Lula. All Rights Reserved.</p>
+                <p class="mt-2">32 Foreshore 8001, Cape Town, South Africa.</p>
                 <br>
-                <p>Contact: Email: info@lula.co.za, Cell phone: +27 21 123 4567</p>
+                <p class="break-words">Contact: <a href="mailto:info@lula.co.za" class="text-mint hover:underline">info@lula.co.za</a></p>
+                <p class="mt-1">Cell phone: <a href="tel:+27211234567" class="text-mint hover:underline">+27 21 123 4567</a></p>
             </div>
         </div>
     </footer>
