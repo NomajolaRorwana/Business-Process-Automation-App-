@@ -39,7 +39,7 @@ Create your own account to keep your job search organized and private.
 ### **Getting Started**
 
 1. **Visit the Website**
-   - Go to: (https://nomajolarorwana.github.io/Lula_Final_Project/home.html)](https://lulasearch.netlify.app/home.html)
+   - Go to:(https://lulasearch.netlify.app/home.html)
 
 2. **Create Your Account**
    - Click "Register" and fill in your details
@@ -131,6 +131,7 @@ If you encounter any issues or have questions:
 ---
 
 **Start your career journey with Lula today!** 🚀
+
 
 
 
