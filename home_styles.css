@@ -41,15 +41,15 @@
 
 /* Mobile menu button styling */
 #mobile-menu .signup-btn {
-    background: transparent;
-    color: #FFFFFF;
-    border-color: rgba(255, 255, 255, 0.16);
+    background: var(--accent-solid);
+    color: #071022;
+    border-color: var(--accent-solid);
     transition: all 0.2s ease;
 }
 
 #mobile-menu .signup-btn:hover {
-    background: var(--accent-solid);
-    color: #071022;
-    border-color: var(--accent-solid);
-    box-shadow: 0 8px 20px rgba(52, 211, 153, 0.12);
+    background: transparent;
+    color: #FFFFFF;
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: none;
 }
