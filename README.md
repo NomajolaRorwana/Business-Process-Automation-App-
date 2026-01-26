@@ -125,12 +125,13 @@ If you encounter any issues or have questions:
 
 ## 🔗 Quick Links
 
-- **Live Application**: (https://nomajolarorwana.github.io/Lula_Final_Project/home.html)](https://lulasearch.netlify.app/home.html)
+- **Live Application**: (https://lulasearch.netlify.app/home.html)
 
 
 ---
 
 **Start your career journey with Lula today!** 🚀
+
 
 
 
