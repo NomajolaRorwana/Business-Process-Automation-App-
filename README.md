@@ -126,8 +126,9 @@ If you encounter any issues or have questions:
 ## 🔗 Quick Links
 
 - **Live Application**: [https://nomajolarorwana.github.io/Lula_Final_Project/home.html](https://nomajolarorwana.github.io/Lula_Final_Project/home.html)
-- **Source Code**: [https://github.com/NomajolaRorwana/Lula_Final_Project](https://github.com/NomajolaRorwana/Lula_Final_Project)
+
 
 ---
 
 **Start your career journey with Lula today!** 🚀
+
