@@ -1,3 +1,197 @@
+/* Root variables */
+:root {
+    --accent-solid: #34d399;
+    --navy-bg: #0f172a;
+    --navy-light: #1e293b;
+    --navy-lighter: #334155;
+}
+
+/* Body styling - Navy background */
+body {
+    background: var(--navy-bg);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    color: #f8fafc;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Custom color utilities */
+.text-mint {
+    color: var(--accent-solid) !important;
+}
+
+.bg-mint {
+    background-color: var(--accent-solid) !important;
+}
+
+.bg-dark-section {
+    background-color: var(--navy-light);
+}
+
+/* Navigation styling */
+#site-nav {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#site-nav.scrolled {
+    background: rgba(15, 23, 42, 0.98);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Signup button */
+.signup-btn {
+    background: transparent;
+    color: #FFFFFF;
+    border-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    background: var(--accent-solid);
+    color: var(--navy-bg);
+    border-color: var(--accent-solid);
+}
+
+/* Glass card effect */
+.glass-card {
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Candidate cards */
+.candidate-card {
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift effect */
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Skill badges */
+.skill-badge {
+    background: rgba(30, 41, 59, 0.8);
+    color: #d1d5db;
+    transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+    background: rgba(52, 211, 153, 0.2);
+    color: var(--accent-solid);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.reveal.in-view {
+    opacity: 1;
+}
+
+/* Stagger animation */
+.stagger > * {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.stagger > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger > *:nth-child(4) { animation-delay: 0.4s; }
+.stagger > *:nth-child(5) { animation-delay: 0.5s; }
+.stagger > *:nth-child(6) { animation-delay: 0.6s; }
+.stagger > *:nth-child(7) { animation-delay: 0.7s; }
+.stagger > *:nth-child(8) { animation-delay: 0.8s; }
+.stagger > *:nth-child(9) { animation-delay: 0.9s; }
+.stagger > *:nth-child(10) { animation-delay: 1s; }
+.stagger > *:nth-child(11) { animation-delay: 1.1s; }
+.stagger > *:nth-child(12) { animation-delay: 1.2s; }
+.stagger > *:nth-child(13) { animation-delay: 1.3s; }
+.stagger > *:nth-child(14) { animation-delay: 1.4s; }
+.stagger > *:nth-child(15) { animation-delay: 1.5s; }
+.stagger > *:nth-child(16) { animation-delay: 1.6s; }
+.stagger > *:nth-child(17) { animation-delay: 1.7s; }
+
+/* Decorative fade */
+@keyframes decorFade {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 0.9; }
+}
+
+.decor-fade {
+    animation: decorFade 4s ease-in-out infinite;
+}
+
+.decor-fade.delay {
+    animation-delay: 2s;
+}
+
+/* Logo marquee */
+.logo-marquee {
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+.marquee-track {
+    display: flex;
+    gap: 2rem;
+    animation: marqueeScroll 30s linear infinite;
+}
+
+.marquee-track img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.6);
+    transition: all 0.3s ease;
+}
+
+.marquee-track img:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.1);
+}
+
+@keyframes marqueeScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Company logos container */
+.company-logos-container {
+    max-width: 100%;
+}
+
 /* Mobile menu styling */
 #mobile-menu {
     transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -54,4 +248,10 @@
     color: #FFFFFF;
     border-color: rgba(255, 255, 255, 0.16);
     box-shadow: none;
+}
+
+/* Disable animations during resize */
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
 }
